@@ -18,7 +18,35 @@
     .section h2 {text-align: center; margin-bottom: 30px; color: #003366;}
     .services, .portfolio {display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;}
     .service, .portfolio-item {flex: 1 1 200px; background: #f2f2f2; padding: 20px; border-radius: 10px; text-align: center;}
-    .portfolio img {width: 100%; border-radius: 8px;}
+    .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  flex: 0 1 280px;
+  max-width: 280px;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: white; /* opcional: para fundo neutro em torno da imagem */
+
+}
+
+
     .contact {text-align: center; padding: 30px;}
     .contact a {display: inline-block; margin: 10px; padding: 12px 20px; background: #003366; color: white; text-decoration: none; border-radius: 5px;}
     footer {background: #002244; color: white; text-align: center; padding: 20px; margin-top: 40px;}
@@ -76,12 +104,15 @@
     <div class="portfolio">
       <div class="portfolio-item">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgD7ErRey2u-Ft4OU3woDKwCS2Ks4CZWAe7k9cx5KKVrfKjG16soRD04sgtc4HuToIi4hYs30nMv5hOnaFvQbKjDfobhcGD74-rV5lvkzcJq4TpC8BOIJQzjDhoBHJN9FupNj4WDwF5Hoja8i51QfYFst062f_ynEq28wDMR9hjiAFk2JjuLYQQxUcIhhga/s1920/C%C3%B3pia%20de%20Design%20sem%20nome%20(5).gif">
-        <p>Galeria de Fotos</p>
+        <p>Coffee break</p>
       </div>
+<div class="portfolio-item">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNExja4zNR92e2ZoiBfhH3iLzawfmA2mhc4InRbb5CCPX3AK8qweYsAYqTr3NQrkBNqlpnyDTM76XJDfSPOO2zy3bCln57BHAlGOAAT52xhOHla5luLc3zRcdw8w-BM3NeHga_UUuO-nptcLnr_aeHmGhBUHewmnj4YJAHEKPFoN1FNANuqFYRZj4l7gOQ/s1920/kit%20lanche%20(2).gif" alt="Evento 2">
+        <p>Kit Lanche</p>
+</div>
       <div class="portfolio-item">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrKeeAkBHH8a8v_3XDyj2zUeKGjul8hJaPaNgIAtmTeCZM5FhiHzycj46rpVgxrzAB9ZhSRQbrGXviTCy7qbGaOHBQ0EKP-T3QeDzvSZTDqDxIpQucd1Dy8130U4WuDSy8FojgnmRvE_Gx9dWPHy_yTtZArRW-dm5LXa7ZzXEM2qUv85X3-npkUl_EK-kD/s1920/clientes%20(1).gif" alt="Evento 2">
         <p>Clientes</p>
-      </div>
     </div>
   </section>
 
